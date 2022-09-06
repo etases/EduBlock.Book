@@ -1,4 +1,6 @@
-# System Architecture
+# SRS
+
+## System Architecture
 ```plantuml
 @startuml
 

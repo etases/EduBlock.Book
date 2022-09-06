@@ -1,4 +1,4 @@
 # Summary
 
-- [Kế hoạch](./plan.md)
-- [SRS](./requirement.md)
+- [Kế hoạch](./Plan.md)
+- [SRS](./Requirement.md)

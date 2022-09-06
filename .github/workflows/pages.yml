@@ -28,11 +28,6 @@ jobs:
           args: "--no-default-features"
           features: "search"
 
-      - name: Install mdbook-pdf
-        uses: baptiste0928/cargo-install@v1
-        with:
-          crate: mdbook-pdf
-
       - name: Install mdbook-plantuml
         uses: baptiste0928/cargo-install@v1
         with:
@@ -46,9 +41,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book/html
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Book PDF
-          path: book/pdf/output.pdf
+          publish_dir: ./book

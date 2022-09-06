@@ -14,7 +14,10 @@ jobs:
       - uses: Swatinem/rust-cache@v1
 
       - name: Setup
-        run: cargo install mdbook mdbook-pdf
+        run: |
+          sudo apt update
+          sudo apt install libssl-dev pkg-config
+          cargo install mdbook mdbook-pdf mdbook-plantuml 
 
       - run: mdbook build
 

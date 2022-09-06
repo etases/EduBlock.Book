@@ -5,6 +5,9 @@ multilingual = false
 src = "src"
 title = "EduBlock"
 
+[preprocessor.plantuml]
+plantuml-cmd="https://www.plantuml.com/plantuml"
+
 [output.html]
 git-repository-url = "https://github.com/etases/EduBlock.Book"
 git-repository-icon = "fa-github"

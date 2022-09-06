@@ -4,3 +4,11 @@ language = "en"
 multilingual = false
 src = "src"
 title = "EduBlock"
+
+[output.html]
+git-repository-url = "https://github.com/etases/EduBlock.Book"
+git-repository-icon = "fa-github"
+site-url = "/EduBlock.Book/"
+
+[output.pdf]
+static_site_url = "https://github.com/etases/EduBlock.Book"

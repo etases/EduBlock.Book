@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: Swatinem/rust-cache@v1
+
       - name: Setup
         run: cargo install mdbook mdbook-pdf
 

@@ -11,13 +11,30 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: Swatinem/rust-cache@v1
-
       - name: Setup
         run: |
           sudo apt update
           sudo apt install libssl-dev pkg-config
-          cargo install mdbook mdbook-pdf mdbook-plantuml 
+
+      - name: Install mdbook
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook
+          version: "^0.4"
+          args: "--no-default-features"
+          features: "search"
+
+      - name: Install mdbook-pdf
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook-pdf
+
+      - name: Install mdbook-plantuml
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook-plantuml
+          args: "--no-default-features"
+          features: "plantuml-ssl-server"
 
       - run: mdbook build
 

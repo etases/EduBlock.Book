@@ -12,9 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup
-        run: |
-          cargo install mdbook
-          cargo install mdbook-pdf
+        run: cargo install mdbook mdbook-pdf
 
       - run: mdbook build
 

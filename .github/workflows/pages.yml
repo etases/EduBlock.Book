@@ -33,6 +33,11 @@ jobs:
         with:
           crate: mdbook-pdf
 
+      - name: Install mdbook-graphviz
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook-graphviz
+
       - name: Install mdbook-plantuml
         uses: baptiste0928/cargo-install@v1
         with:

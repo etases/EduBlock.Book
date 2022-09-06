@@ -8,6 +8,10 @@ title = "EduBlock"
 [preprocessor.plantuml]
 plantuml-cmd="https://www.plantuml.com/plantuml"
 
+[preprocessor.graphviz]
+command = "mdbook-graphviz"
+output-to-file = true
+
 [output.html]
 git-repository-url = "https://github.com/etases/EduBlock.Book"
 git-repository-icon = "fa-github"

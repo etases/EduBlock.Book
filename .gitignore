@@ -3,3 +3,7 @@ _site/
 _book/
 *.tex
 /.quarto/
+*.aux
+*.log
+*.pdf
+*.toc

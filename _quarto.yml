@@ -19,8 +19,9 @@ format:
     theme: cosmo
     fig-align: left
   pdf:
-    documentclass: scrreprt
+    documentclass: book
     pdf-engine: tectonic
+    papersize: a4
 
 filters:
   - filters/diagram-generator.lua

@@ -20,7 +20,7 @@ format:
     fig-align: left
   pdf:
     documentclass: scrreprt
-    # pdf-engine: pdflatex
+    pdf-engine: tectonic
 
 filters:
   - filters/diagram-generator.lua

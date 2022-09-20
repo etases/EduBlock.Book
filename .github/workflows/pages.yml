@@ -11,29 +11,61 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Setup
         run: |
-          sudo apt install graphviz librsvg2-bin
+          sudo apt update
+          sudo apt install libssl-dev pkg-config
 
-      - name: Install tectonic
-        uses: wtfjoke/setup-tectonic@v1
+      - run: rustup toolchain install stable --profile minimal
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install mdbook
+        uses: baptiste0928/cargo-install@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          crate: mdbook
+          version: "^0.4"
+          args: "--no-default-features"
+          features: "search"
 
-      - uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+      - name: Install mdbook-pdf
+        uses: baptiste0928/cargo-install@v1
         with:
-          to: all
+          crate: mdbook-pdf
+
+      - name: Install mdbook-graphviz
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook-graphviz
+
+      - name: Install mdbook-latex
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook-latex
+
+      - name: Install mdbook-plantuml
+        uses: baptiste0928/cargo-install@v1
+        with:
+          crate: mdbook-plantuml
+          args: "--no-default-features"
+          features: "plantuml-ssl-server"
+
+      - run: mdbook build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_book
+          publish_dir: ./book/html
 
-      - uses: actions/upload-artifact@v3
+      - name: Publish PDF
+        uses: actions/upload-artifact@v3
         with:
-          name: Book
-          path: _book
+          name: Book PDF
+          path: book/pdf/
+
+      - name: Publist Latex
+        uses: actions/upload-artifact@v3
+        with:
+          name: Book Latex
+          path: book/latex/

@@ -11,49 +11,23 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup
-        run: |
-          sudo apt update
-          sudo apt install libssl-dev pkg-config
-
-      - run: rustup toolchain install stable --profile minimal
-
-      - uses: Swatinem/rust-cache@v2
-
-      - name: Install mdbook
-        uses: baptiste0928/cargo-install@v1
+      - uses: quarto-dev/quarto-actions/setup@v2
         with:
-          crate: mdbook
-          version: "^0.4"
-          args: "--no-default-features"
-          features: "search"
+          tinytex: true
 
-      - name: Install mdbook-pdf
-        uses: baptiste0928/cargo-install@v1
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
         with:
-          crate: mdbook-pdf
+          to: all
 
-      - name: Install mdbook-graphviz
-        uses: baptiste0928/cargo-install@v1
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          crate: mdbook-graphviz
-
-      - name: Install mdbook-plantuml
-        uses: baptiste0928/cargo-install@v1
-        with:
-          crate: mdbook-plantuml
-          args: "--no-default-features"
-          features: "plantuml-ssl-server"
-
-      - run: mdbook build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book/html
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/upload-artifact@v3
         with:
-          name: Book PDF
-          path: book/pdf/output.pdf
+          name: Book
+          path: _book

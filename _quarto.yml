@@ -20,6 +20,7 @@ format:
     fig-align: left
   pdf:
     documentclass: scrreprt
+    pdf-engine: latexmk
 
 filters:
   - filters/diagram-generator.lua

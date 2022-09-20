@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EduBlock",
+    "section": "",
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "Plan.html",
+    "href": "Plan.html",
+    "title": "1  EduBlock - Kế hoạch",
+    "section": "",
+    "text": "Thời gian: 01/08/2022 - 04/09/2022\nMô tả: Đây là giai đoạn lên ý tưởng và thực hiện prototype đầu tiên cho dự án Học bạ điện tử, với phạm vi của giai đoạn là thực hiện hệ thống trên 1 trường, và thử nghiệm trên nền tảng public blockchain (Dfinity).\nSản phẩm: - Tài liệu yêu cầu - Tài liệu giới thiệu dự án - Tài liệu cấu trúc hệ thống Phase 1 - Hi-Fi Prototype Phase 1"
+  },
+  {
+    "objectID": "Plan.html#phase-2---vượt-chướng-ngại-vật",
+    "href": "Plan.html#phase-2---vượt-chướng-ngại-vật",
+    "title": "1  EduBlock - Kế hoạch",
+    "section": "1.2 Phase 2 - Vượt chướng ngại vật",
+    "text": "1.2 Phase 2 - Vượt chướng ngại vật\nThời gian: 05/09/2022 - 30/09/2022\nMô tả: Đây là giai đoạn quan trọng để mở rộng phạm vi của dự án lên quy mô toàn quốc, bao gồm nghiên cứu các công nghệ cần cho việc thiết kế hệ thống phù hợp với quy trình xét học bạ hiện tại.\n\n1.2.1 Task 1 - Mở rộng phạm vi\nMô tả: Mở rộng phạm vi dự án và xây dựng cái tài liệu mới dựa trên các tài liệu từ Phase 1. Chủ yếu là thiết kế mô hình hệ thống cho phạm vi được mở rộng này.\nLưu ý: Phạm vi lần này là mở rộng quy mô lên các Sở Giáo Dục của toàn quốc, và phạm vi học bạ bao gồm các điểm số nhỏ (Kiểm tra miệng, Kiểm tra 15 phút,…).\nSản phẩm: - Tài liệu yêu cầu - Tài liệu giới thiệu dự án theo phạm vi mới - Tài liệu cấu trúc hệ thống Phase 2\n\n\n1.2.2 Task 2 - Thiết kế Backend\nMô tả: Thiết kế hệ thống backend theo phạm vi mới. Tìm hiểu công nghệ Hyperledger Fabric để xây dựng mạng lưới Private Blockchain phù hợp với yêu cầu.\nLưu ý: Nếu không kịp tìm hiểu Hyperledger Fabric hoặc nó không phù hợp thì vẫn có thể thiết kế hệ thống backend dạng MVC với phạm vi của từng Sở Giáo Dục và tìm cách liên kết các Sở Giáo Dục lại thành mạng lưới truyền thông tin.\nSản phẩm - Tài liệu thiết kế Backend - Tài liệu Endpoint của Web API - Hi-Fi Prototype Phase 2 cho Backend\n\n\n1.2.3 Task 3 - Thiết kế Frontend\nMô tả: Thiết kế Backend sử dụng Framework phù hợp cho người lập trình. Mục tiêu là sử dụng Framework để vừa làm nhanh, phù hợp với người lập trình web thuần HTML, CSS và JS mà không có các logic phức tạp và lỗi giao diện.\nLưu ý: Có thể tự thiết kế Fake Web API để thử nghiệm việc kết nối đến Backend.\nGhi chú: Svelte?\nSản phẩm - Tài liệu thiết kế Frontend - Hi-Fi Prototype Phase 2 cho Frontend\n\n\n1.2.4 Task 4 - Mở rộng tính năng nâng cao\nMô tả: Bao gồm sử dụng công nghệ nhận diện để nạp học bạ giấy lên hệ thống.\nLưu ý: Ở Phase này là nghiên cứu tìm cách thêm tính năng, những tính năng trong Task này nếu xét là không kịp thì có thể không làm.\nSản phẩm - Tài liệu và Prototype liên quan"
+  },
+  {
+    "objectID": "Plan.html#phase-3---tăng-tốc",
+    "href": "Plan.html#phase-3---tăng-tốc",
+    "title": "1  EduBlock - Kế hoạch",
+    "section": "1.3 Phase 3 - Tăng tốc",
+    "text": "1.3 Phase 3 - Tăng tốc\nThời gian: 01/10/2022 - 31/10/2022\nMô tả: Đây là giai đoạn thực hiện sản phẩm cuối cùng. Bao gồm hoàn thiện Frontend, Backend và các tính năng liên quan; Kết nối Frontend và Backend; Bổ sung tài liệu cài đặt hệ thống.\nSản phẩm - Hệ thống cuối, chưa qua Test - Tài liệu hệ thống - Hướng dẫn cài đặt hệ thống"
+  },
+  {
+    "objectID": "Plan.html#phase-4---về-đích",
+    "href": "Plan.html#phase-4---về-đích",
+    "title": "1  EduBlock - Kế hoạch",
+    "section": "1.4 Phase 4 - Về đích",
+    "text": "1.4 Phase 4 - Về đích\nThời gian: 01/11/2022 - 30/11/2022\nMô tả: Đây là giai đoạn test hệ thống và viết báo cáo\nSản phẩm - Hệ thống cuối, đã Test - Tài liệu Testing - Tài liệu hệ thống cuối - Báo cáo dự án"
+  },
+  {
+    "objectID": "Requirement.html",
+    "href": "Requirement.html",
+    "title": "2  EduBlock",
+    "section": "",
+    "text": "This is the specification for a student record system that store the student records on the BlockChain network. The system is designed to provide a user-friendly interface for teachers to update their students’ academic records and a full replacement of traditional academic record papers."
+  },
+  {
+    "objectID": "Requirement.html#about-existing-system",
+    "href": "Requirement.html#about-existing-system",
+    "title": "2  EduBlock",
+    "section": "2.2 About Existing System",
+    "text": "2.2 About Existing System\nMany high schools in Viet Nam use one of existing online systems to store students’ academic records and notify their parents about recent records, but they still use traditional record papers for post-graduation & university / college enrollment. Therefore, The teachers find it difficult to update their students’ records because they have to update the records on both the online system & the record paper. Moreover, the online system is a centralized system that only the admins and the teachers can see and interact, so there is little transparency for students who want to see their records at any time."
+  },
+  {
+    "objectID": "Requirement.html#user-requirement",
+    "href": "Requirement.html#user-requirement",
+    "title": "2  EduBlock",
+    "section": "2.3 User Requirement",
+    "text": "2.3 User Requirement\n\n2.3.1 Main Function\n\nNormal User\n\nRequest Registration\n\nThe user must fill a form of personal information\nThe user must choose a role to request: Student or Teacher\nThe user can send the request form and wait for an admin to review\n\nLogin\n\nThe user must have an account on the system to login\n\n\nStudent\n\nSee Student Records\n\nThe user must login to use this function\nThe user can only see his academic records\n\n\nTeacher\n\nView Class\n\nThe user must login to use this function\nThe user can only see his own classes\nThe user can filter his classes by name or year\n\nView Student\n\nThe user must login to use this function\nThe user can only see his own classes\nThe user can choose a class and see its student\nThe user can filter his students by name\n\nUpdate Student Records\n\nThe user must login to use this function\nThe user can only update students of his classes\nThe user can choose a student and see his academic records\nThe user can update the student’s records\n\n\nAdmin\n\nView Class\n\nThe user must login to use this function\nThe user can see created classes\nThe user can filter the classes by name or year\n\nCreate Class\n\nThe user must login to use this function\nThe user must assign a teacher to the class as a home teacher\nThe user must assign students to the class\n\nView Student\n\nThe user must login to use this function\nThe user can see registered students\nThe user can filter the students by name\n\nView Teacher\n\nThe user must login to use this function\nThe user can see registered teachers\nThe user can filter the teachers by name\n\nReview Registration\n\nThe user must login to use this function\nThe user can see the waiting requests\nThe user can accept or deny a request\nThe user can filter the requests by username or fullname\nFor teacher requests, the user can export a list to give to the On-Chain Admin\n\n\nOn-Chain Admin\n\nAdd/Remove Teachers\n\nThe user must interact with the BlockChain (On-Chain) service to use this function\nThe user can add or remove a list of teachers received from the Admin\n\n\n\n\n\n2.3.2 Non-Function\n\nThe system easy to maintain & upgrade\nThe user interface is clear, idiot-proof, easy to use & friendly\nThe system is available on 24/7"
+  },
+  {
+    "objectID": "Requirement.html#system-requirement",
+    "href": "Requirement.html#system-requirement",
+    "title": "2  EduBlock",
+    "section": "2.4 System Requirement",
+    "text": "2.4 System Requirement\n\n2.4.1 System Component\n\n\n\nOverview of System component\n\n\n\n\n\n\n\n\n\nComponent\nDescription\n\n\n\n\nFrontend\nThe interface of the system, responsible for UI/UX\n\n\nOff-Chain Service\nStore the personal information of the user, the registration requests and the details of classes & students\n\n\nOn-Chain Service\nStore the student’s academic records by grade & Allow teachers to update their students’ records\n\n\n\n\n\n2.4.2 Actor Description\n\n\n\n\n\n\n\nActor\nDescription\n\n\n\n\nStudent\nThe smallest actor of the system who can only see his academic records\n\n\nTeacher\nA person who can update the student’s academic records\n\n\nAdmin\nA manager of the system who manage teachers, classes & students\n\n\nOn-Chain Admin\nA subset of Admin who interacts with the On-Chain service\n\n\n\n\n\n2.4.3 Use case diagram\n\n\n\nUse case diagram"
+  },
+  {
+    "objectID": "Requirement.new.html",
+    "href": "Requirement.new.html",
+    "title": "3  SRS",
+    "section": "",
+    "text": "Without BlockChain\n\n\n\n\nSystem architecture without BlockChain\n\n\n\nWith BlockChain\n\n\n\n\nSystem architecture with BlockChain\n\n\n\n\n\n\n\n\n\nComponent\nDescription\n\n\n\n\nChain Node (CN)\nA node of the blockchain. This stores the records and handles the history and transaction requests from the Request Server (Change/View the score, information, etc.)\n\n\nTrusted Record Service (TRS)\nSimilar to Chain Node, but this is a centralized & trusted (by all nodes) service that stores the records and handles requests from the Request Server\n\n\nRequest Server\nThe off-chain backend of a CN / TRS. This stores the pending requests from the user and is the only way to call a request to the CN / TRS. Each Request Server may have a different way to handle user requests (Voting, Direct Request, etc.)\n\n\nFrontend Server\nProvide the UX/UI for interacting with the Request Server"
+  }
+]

@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "EduBlock"
+  author: "HSGamer"
+  date: "9/20/2022"
+  chapters:
+    - index.qmd
+    - Plan.md
+    - Requirement.md
+    - Requirement.new.md
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    fig-align: left
+  pdf:
+    documentclass: book
+    pdf-engine: tectonic
+    papersize: a4
+
+filters:
+  - filters/diagram-generator.lua
+  - quarto
+

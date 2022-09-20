@@ -1,1 +1,9 @@
-book
+.quarto/
+_site/
+_book/
+*.tex
+/.quarto/
+*.aux
+*.log
+*.pdf
+*.toc

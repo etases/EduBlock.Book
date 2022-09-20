@@ -27,12 +27,11 @@ jobs:
         with:
           to: all
 
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_book
 
       - uses: actions/upload-artifact@v3
         with:

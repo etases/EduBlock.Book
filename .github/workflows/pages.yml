@@ -13,7 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt install graphviz latexmk
+          sudo apt install graphviz latexmk rsvg-convert
 
       - uses: quarto-dev/quarto-actions/setup@v2
 

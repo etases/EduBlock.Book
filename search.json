@@ -68,5 +68,12 @@
     "title": "3  SRS",
     "section": "",
     "text": "Without BlockChain\n\n\n\n\nSystem architecture without BlockChain\n\n\n\nWith BlockChain\n\n\n\n\nSystem architecture with BlockChain\n\n\n\n\n\n\n\n\n\nComponent\nDescription\n\n\n\n\nChain Node (CN)\nA node of the blockchain. This stores the records and handles the history and transaction requests from the Request Server (Change/View the score, information, etc.)\n\n\nTrusted Record Service (TRS)\nSimilar to Chain Node, but this is a centralized & trusted (by all nodes) service that stores the records and handles requests from the Request Server\n\n\nRequest Server\nThe off-chain backend of a CN / TRS. This stores the pending requests from the user and is the only way to call a request to the CN / TRS. Each Request Server may have a different way to handle user requests (Voting, Direct Request, etc.)\n\n\nFrontend Server\nProvide the UX/UI for interacting with the Request Server"
+  },
+  {
+    "objectID": "Requirement.new.html#database",
+    "href": "Requirement.new.html#database",
+    "title": "3  SRS",
+    "section": "3.2 Database",
+    "text": "3.2 Database\n\n\n\nDatabase diagram"
   }
 ]

@@ -70,3 +70,6 @@ CN3 -- E2
 | Trusted Record Service (TRS) | Similar to Chain Node, but this is a centralized & trusted (by all nodes) service that stores the records and handles requests from the Request Server |
 | Request Server  | The off-chain backend of a CN / TRS. This stores the pending requests from the user and is the only way to call a request to the CN / TRS. Each Request Server may have a different way to handle user requests (Voting, Direct Request, etc.) |
 | Frontend Server | Provide the UX/UI for interacting with the Request Server                                                                                                                                                                                        |
+
+## Database
+![Database diagram](images/database-diagram.png)

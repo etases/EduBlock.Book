@@ -1,4 +1,4 @@
-# EduBlock
+# Requirement (Hackathon)
 
 ## Introduction
 

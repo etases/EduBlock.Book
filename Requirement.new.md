@@ -1,4 +1,4 @@
-# SRS
+# Requirement (CP)
 
 ## System Architecture
 * Without BlockChain

@@ -10,6 +10,7 @@ book:
     - Plan.md
     - Requirement.md
     - Requirement.new.md
+    - DesignArticle.VI.md
     - references.qmd
 
 bibliography: references.bib

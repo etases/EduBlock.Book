@@ -1,4 +1,4 @@
-# EduBlock - Kế hoạch
+# Plan (VI)
 
 ## Phase 1 - Khởi động
 

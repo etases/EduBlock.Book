@@ -77,38 +77,38 @@
     "text": "4.2 Database\n\n\n\nDatabase diagram"
   },
   {
-    "objectID": "DesignArticle.VI.html#động-lực",
-    "href": "DesignArticle.VI.html#động-lực",
+    "objectID": "DesignArticle.VI.html",
+    "href": "DesignArticle.VI.html",
     "title": "5  Design Article (VI)",
-    "section": "5.2 Động lực",
-    "text": "5.2 Động lực"
+    "section": "",
+    "text": "Hiện nay công nghệ đang phát triển. Ngành giáo dục Việt Nam cũng đã chuyển đổi số rất nhiều bộ phận như áp dụng công nghệ trong giảng dạy cho giáo viên, trang thông tin liên lạc trực tuyến giữa nhà trường và phụ huynh, hình thức học trực tuyến, etc. Tuy nhiên, trong khi đang phát triển công nghệ ở nhiều mặt trong ngành và cố gắng giảm bớt gánh nặng với các công việc ngoài lề cho giáo viên thì vẫn có nhiều vấn đề khi cố gắng áp dụng công nghệ vào một số bộ phận. Một trong số đó là vấn đề về học bạ và số hóa học bạ.\nHọc bạ là một sổ theo dõi quá trình học tập của học sinh. Nó chứa thông tin sơ lược về lí lịch, quá trình và kết quả học tập từng năm, đồng thời có lời nhận xét và chữ kí của giáo viên chủ nhiệm của từng năm. Việc ghi học bạ hiện nay ở Việt Nam sử dụng học bạ giấy, theo một quy trình chặt chẽ, có tính pháp lí để đảm bảo tính trung thực và nghiêm minh khi đánh giá. Sơ lược thì sau mỗi học kì, giáo viên chủ nhiệm sẽ thu thập điểm số tổng kết của từng môn học từ các giáo viên bộ môn, sau đó ghi vào học bạ của từng học sinh, đồng thời ghi nhận xét và kí tên. Nhưng có bất cập với học bạ giấy như việc giáo viên phải ghi đúng điểm của từng học sinh, học bạ có thể bị mất, etc.\nHiện nay đã có một số địa phương đang số hóa học bạ, hay còn được gọi là áp dụng học bạ điện tử. Nhưng việc triển khai không đồng bộ, nửa vời đã làm tăng khối lượng công việc ngoài của giáo viên lên gấp đôi, khi họ vừa phải ghi thông tin lên học bạ giấy, vừa phải nhập thông tin đó lên hệ thống học bạ điện tử của trường. Ngoài ra còn có một số vấn đề về tính minh bạch, trung thực và độ an toàn của dữ liệu trên các hệ thống đó.\nBài báo này được đăng lên để phân tích những bất cập trong các hệ thống học bạ điện tử hiện nay, đồng thời đề xuất giải pháp để bước đầu thực hiện số hóa hoàn toàn học bạ ở Việt Nam."
   },
   {
     "objectID": "DesignArticle.VI.html#về-các-hệ-thống-hiện-tại",
     "href": "DesignArticle.VI.html#về-các-hệ-thống-hiện-tại",
     "title": "5  Design Article (VI)",
-    "section": "5.3 Về các hệ thống hiện tại",
-    "text": "5.3 Về các hệ thống hiện tại"
+    "section": "5.2 Về các hệ thống hiện tại",
+    "text": "5.2 Về các hệ thống hiện tại"
   },
   {
     "objectID": "DesignArticle.VI.html#giải-pháp-thiết-kế",
     "href": "DesignArticle.VI.html#giải-pháp-thiết-kế",
     "title": "5  Design Article (VI)",
-    "section": "5.4 Giải pháp & Thiết kế",
-    "text": "5.4 Giải pháp & Thiết kế"
+    "section": "5.3 Giải pháp & Thiết kế",
+    "text": "5.3 Giải pháp & Thiết kế\n\n5.3.1 Hệ thống cơ\n\n\n\nSystem architecture without BlockChain\n\n\n\n\n5.3.2 Hệ thống có áp dụng công nghệ dữ liệu phân tán\n\n\n\nSystem architecture with BlockChain"
   },
   {
     "objectID": "DesignArticle.VI.html#kết-thúc",
     "href": "DesignArticle.VI.html#kết-thúc",
     "title": "5  Design Article (VI)",
-    "section": "5.5 Kết thúc",
-    "text": "5.5 Kết thúc"
+    "section": "5.4 Kết thúc",
+    "text": "5.4 Kết thúc"
   },
   {
     "objectID": "DesignArticle.VI.html#nguồn-tham-khảo",
     "href": "DesignArticle.VI.html#nguồn-tham-khảo",
     "title": "5  Design Article (VI)",
-    "section": "5.6 Nguồn tham khảo",
-    "text": "5.6 Nguồn tham khảo"
+    "section": "5.5 Nguồn tham khảo",
+    "text": "5.5 Nguồn tham khảo\n\n(Giáo viên khốn khổ vì học bạ giấy)[https://vnexpress.net/giao-vien-khon-kho-vi-hoc-ba-giay-4442649.html]\n(Học bạ giấy thời 4.0)[https://vnexpress.net/hoc-ba-giay-thoi-4-0-4444060.html]\n(Có học bạ điện tử sao còn làm khó GV khi yêu cầu “bản sao học bạ công chứng”)[https://giaoduc.net.vn/co-hoc-ba-dien-tu-sao-con-lam-kho-gv-khi-yeu-cau-ban-sao-hoc-ba-cong-chung-post226595.gd]"
   }
 ]

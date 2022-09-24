@@ -133,11 +133,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#giới-thiệu" id="toc-giới-thiệu" class="nav-link active" data-scroll-target="#giới-thiệu"><span class="toc-section-number">5.1</span>  Giới thiệu</a></li>
-  <li><a href="#động-lực" id="toc-động-lực" class="nav-link" data-scroll-target="#động-lực"><span class="toc-section-number">5.2</span>  Động lực</a></li>
-  <li><a href="#về-các-hệ-thống-hiện-tại" id="toc-về-các-hệ-thống-hiện-tại" class="nav-link" data-scroll-target="#về-các-hệ-thống-hiện-tại"><span class="toc-section-number">5.3</span>  Về các hệ thống hiện tại</a></li>
-  <li><a href="#giải-pháp-thiết-kế" id="toc-giải-pháp-thiết-kế" class="nav-link" data-scroll-target="#giải-pháp-thiết-kế"><span class="toc-section-number">5.4</span>  Giải pháp &amp; Thiết kế</a></li>
-  <li><a href="#kết-thúc" id="toc-kết-thúc" class="nav-link" data-scroll-target="#kết-thúc"><span class="toc-section-number">5.5</span>  Kết thúc</a></li>
-  <li><a href="#nguồn-tham-khảo" id="toc-nguồn-tham-khảo" class="nav-link" data-scroll-target="#nguồn-tham-khảo"><span class="toc-section-number">5.6</span>  Nguồn tham khảo</a></li>
+  <li><a href="#về-các-hệ-thống-hiện-tại" id="toc-về-các-hệ-thống-hiện-tại" class="nav-link" data-scroll-target="#về-các-hệ-thống-hiện-tại"><span class="toc-section-number">5.2</span>  Về các hệ thống hiện tại</a></li>
+  <li><a href="#giải-pháp-thiết-kế" id="toc-giải-pháp-thiết-kế" class="nav-link" data-scroll-target="#giải-pháp-thiết-kế"><span class="toc-section-number">5.3</span>  Giải pháp &amp; Thiết kế</a>
+  <ul class="collapse">
+  <li><a href="#hệ-thống-cơ" id="toc-hệ-thống-cơ" class="nav-link" data-scroll-target="#hệ-thống-cơ"><span class="toc-section-number">5.3.1</span>  Hệ thống cơ</a></li>
+  <li><a href="#hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán" id="toc-hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán" class="nav-link" data-scroll-target="#hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán"><span class="toc-section-number">5.3.2</span>  Hệ thống có áp dụng công nghệ dữ liệu phân tán</a></li>
+  </ul></li>
+  <li><a href="#kết-thúc" id="toc-kết-thúc" class="nav-link" data-scroll-target="#kết-thúc"><span class="toc-section-number">5.4</span>  Kết thúc</a></li>
+  <li><a href="#nguồn-tham-khảo" id="toc-nguồn-tham-khảo" class="nav-link" data-scroll-target="#nguồn-tham-khảo"><span class="toc-section-number">5.5</span>  Nguồn tham khảo</a></li>
   </ul>
 </nav>
     </div>
@@ -163,21 +166,45 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="giới-thiệu" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="giới-thiệu"><span class="header-section-number">5.1</span> Giới thiệu</h2>
+<p>Hiện nay công nghệ đang phát triển. Ngành giáo dục Việt Nam cũng đã chuyển đổi số rất nhiều bộ phận như áp dụng công nghệ trong giảng dạy cho giáo viên, trang thông tin liên lạc trực tuyến giữa nhà trường và phụ huynh, hình thức học trực tuyến, etc. Tuy nhiên, trong khi đang phát triển công nghệ ở nhiều mặt trong ngành và cố gắng giảm bớt gánh nặng với các công việc ngoài lề cho giáo viên thì vẫn có nhiều vấn đề khi cố gắng áp dụng công nghệ vào một số bộ phận. Một trong số đó là vấn đề về học bạ và số hóa học bạ.</p>
+<p>Học bạ là một sổ theo dõi quá trình học tập của học sinh. Nó chứa thông tin sơ lược về lí lịch, quá trình và kết quả học tập từng năm, đồng thời có lời nhận xét và chữ kí của giáo viên chủ nhiệm của từng năm. Việc ghi học bạ hiện nay ở Việt Nam sử dụng học bạ giấy, theo một quy trình chặt chẽ, có tính pháp lí để đảm bảo tính trung thực và nghiêm minh khi đánh giá. Sơ lược thì sau mỗi học kì, giáo viên chủ nhiệm sẽ thu thập điểm số tổng kết của từng môn học từ các giáo viên bộ môn, sau đó ghi vào học bạ của từng học sinh, đồng thời ghi nhận xét và kí tên. Nhưng có bất cập với học bạ giấy như việc giáo viên phải ghi đúng điểm của từng học sinh, học bạ có thể bị mất, etc.</p>
+<p>Hiện nay đã có một số địa phương đang số hóa học bạ, hay còn được gọi là áp dụng học bạ điện tử. Nhưng việc triển khai không đồng bộ, nửa vời đã làm tăng khối lượng công việc ngoài của giáo viên lên gấp đôi, khi họ vừa phải ghi thông tin lên học bạ giấy, vừa phải nhập thông tin đó lên hệ thống học bạ điện tử của trường. Ngoài ra còn có một số vấn đề về tính minh bạch, trung thực và độ an toàn của dữ liệu trên các hệ thống đó.</p>
+<p>Bài báo này được đăng lên để phân tích những bất cập trong các hệ thống học bạ điện tử hiện nay, đồng thời đề xuất giải pháp để bước đầu thực hiện số hóa hoàn toàn học bạ ở Việt Nam.</p>
 </section>
-<section id="động-lực" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="động-lực"><span class="header-section-number">5.2</span> Động lực</h2>
+<section id="về-các-hệ-thống-hiện-tại" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="về-các-hệ-thống-hiện-tại"><span class="header-section-number">5.2</span> Về các hệ thống hiện tại</h2>
 </section>
-<section id="về-các-hệ-thống-hiện-tại" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="về-các-hệ-thống-hiện-tại"><span class="header-section-number">5.3</span> Về các hệ thống hiện tại</h2>
+<section id="giải-pháp-thiết-kế" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="giải-pháp-thiết-kế"><span class="header-section-number">5.3</span> Giải pháp &amp; Thiết kế</h2>
+<section id="hệ-thống-cơ" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="hệ-thống-cơ"><span class="header-section-number">5.3.1</span> Hệ thống cơ</h3>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="DesignArticle.VI_files/mediabag/d8f4c09018c3958c4b6432e12162b46d0861b1a1.svg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">System architecture without BlockChain</figcaption><p></p>
+</figure>
+</div>
 </section>
-<section id="giải-pháp-thiết-kế" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="giải-pháp-thiết-kế"><span class="header-section-number">5.4</span> Giải pháp &amp; Thiết kế</h2>
+<section id="hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán"><span class="header-section-number">5.3.2</span> Hệ thống có áp dụng công nghệ dữ liệu phân tán</h3>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="DesignArticle.VI_files/mediabag/2f039218ebfec284141891729467201045c71640.svg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">System architecture with BlockChain</figcaption><p></p>
+</figure>
+</div>
 </section>
-<section id="kết-thúc" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="kết-thúc"><span class="header-section-number">5.5</span> Kết thúc</h2>
 </section>
-<section id="nguồn-tham-khảo" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="nguồn-tham-khảo"><span class="header-section-number">5.6</span> Nguồn tham khảo</h2>
+<section id="kết-thúc" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="kết-thúc"><span class="header-section-number">5.4</span> Kết thúc</h2>
+</section>
+<section id="nguồn-tham-khảo" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="nguồn-tham-khảo"><span class="header-section-number">5.5</span> Nguồn tham khảo</h2>
+<ul>
+<li>(Giáo viên khốn khổ vì học bạ giấy)[https://vnexpress.net/giao-vien-khon-kho-vi-hoc-ba-giay-4442649.html]</li>
+<li>(Học bạ giấy thời 4.0)[https://vnexpress.net/hoc-ba-giay-thoi-4-0-4444060.html]</li>
+<li>(Có học bạ điện tử sao còn làm khó GV khi yêu cầu “bản sao học bạ công chứng”)[https://giaoduc.net.vn/co-hoc-ba-dien-tu-sao-con-lam-kho-gv-khi-yeu-cau-ban-sao-hoc-ba-cong-chung-post226595.gd]</li>
+</ul>
 
 
 </section>

@@ -86,6 +86,6 @@ CN3 -- E2
 
 ## Nguồn tham khảo
 
-- (Giáo viên khốn khổ vì học bạ giấy)[https://vnexpress.net/giao-vien-khon-kho-vi-hoc-ba-giay-4442649.html]
-- (Học bạ giấy thời 4.0)[https://vnexpress.net/hoc-ba-giay-thoi-4-0-4444060.html]
-- (Có học bạ điện tử sao còn làm khó GV khi yêu cầu "bản sao học bạ công chứng")[https://giaoduc.net.vn/co-hoc-ba-dien-tu-sao-con-lam-kho-gv-khi-yeu-cau-ban-sao-hoc-ba-cong-chung-post226595.gd]
+- [Giáo viên khốn khổ vì học bạ giấy](https://vnexpress.net/giao-vien-khon-kho-vi-hoc-ba-giay-4442649.html)
+- [Học bạ giấy thời 4.0](https://vnexpress.net/hoc-ba-giay-thoi-4-0-4444060.html)
+- [Có học bạ điện tử sao còn làm khó GV khi yêu cầu "bản sao học bạ công chứng"](https://giaoduc.net.vn/co-hoc-ba-dien-tu-sao-con-lam-kho-gv-khi-yeu-cau-ban-sao-hoc-ba-cong-chung-post226595.gd)

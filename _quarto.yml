@@ -7,7 +7,7 @@ book:
   date: "9/20/2022"
   repo-url: https://github.com/etases/EduBlock.Book
   repo-actions: [edit, issue]
-  downloads: [pdf, epub]
+  downloads: [pdf]
   chapters:
     - index.qmd
     - Plan.md
@@ -22,6 +22,7 @@ format:
   html:
     theme: cosmo
     fig-align: left
+    self-contained: true
   pdf:
     documentclass: book
     pdf-engine: tectonic

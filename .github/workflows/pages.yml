@@ -22,21 +22,16 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Html
+      - name: Render
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          to: html
+          to: all
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_book
-
-      - name: Render Pdf
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: pdf
 
       - uses: actions/upload-artifact@v3
         with:

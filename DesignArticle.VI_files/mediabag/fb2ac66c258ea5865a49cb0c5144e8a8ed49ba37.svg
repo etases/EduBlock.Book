@@ -6,12 +6,12 @@ entity RS2--><g id="elem_RS2"><rect fill="#00FF00" height="46.2969" rx="2.5" ry=
 entity FS2--><g id="elem_FS2"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="7" y="88"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="151" y="93"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="149" y="95"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="149" y="99"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="22" y="120.9951">Frontend Server 2</text></g><!--MD5=[2e820fb2a50624e3df7aad72d4616637]
 entity RS3--><g id="elem_RS3"><rect fill="#00FF00" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="160" x="231" y="169"/><rect fill="#00FF00" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="371" y="174"/><rect fill="#00FF00" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="369" y="176"/><rect fill="#00FF00" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="369" y="180"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="246" y="201.9951">Request Server 3</text></g><!--MD5=[2417f7c8b73886c13f09e56d6cb55c8c]
 entity FS3--><g id="elem_FS3"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="7" y="169"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="151" y="174"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="149" y="176"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="149" y="180"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="22" y="201.9951">Frontend Server 3</text></g><!--MD5=[2091d450ab39ca19b8d18b82285473c2]
-link FS1 to RS1--><g id="link_FS1_RS1"><path d="M171.29,30 C190.76,30 211.51,30 230.87,30 " fill="none" id="FS1-RS1" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c78a0e2778e157b45c8d40016bd7f416]
-link FS2 to RS2--><g id="link_FS2_RS2"><path d="M171.29,111 C190.76,111 211.51,111 230.87,111 " fill="none" id="FS2-RS2" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[abb9ba23e622b22793728305a89ef9b8]
-link FS3 to RS3--><g id="link_FS3_RS3"><path d="M171.29,192 C190.76,192 211.51,192 230.87,192 " fill="none" id="FS3-RS3" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d55b34baca723b2753c03fe9effbef25]
+link FS1 to RS1--><g id="link_FS1_RS1"><path d="M171.29,30 C190.76,30 211.51,30 230.87,30 " fill="none" id="FS1-RS1" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[c78a0e2778e157b45c8d40016bd7f416]
+link FS2 to RS2--><g id="link_FS2_RS2"><path d="M171.29,111 C190.76,111 211.51,111 230.87,111 " fill="none" id="FS2-RS2" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[abb9ba23e622b22793728305a89ef9b8]
+link FS3 to RS3--><g id="link_FS3_RS3"><path d="M171.29,192 C190.76,192 211.51,192 230.87,192 " fill="none" id="FS3-RS3" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[d55b34baca723b2753c03fe9effbef25]
 link RS1 to TRS--><g id="link_RS1_TRS"><path d="M380.17,53.1 C412.32,64 450.58,76.97 482.74,87.87 " fill="none" id="RS1-TRS" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f7d5e726f7bc634c91165a381b214df5]
 link RS2 to TRS--><g id="link_RS2_TRS"><path d="M391.25,111 C410.27,111 430.84,111 450.68,111 " fill="none" id="RS2-TRS" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7310d89e736821e68fe3458de1a10aef]
-link RS3 to TRS--><g id="link_RS3_TRS"><path d="M380.17,168.9 C412.32,158 450.58,145.03 482.74,134.13 " fill="none" id="RS3-TRS" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8acae169fd326f5a04e63b2d61cfc4c1]
+link RS3 to TRS--><g id="link_RS3_TRS"><path d="M380.17,168.9 C412.32,158 450.58,145.03 482.74,134.13 " fill="none" id="RS3-TRS" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3d22a21b28a9367db0c25c19a2627b87]
 @startuml
 
 left to right direction
@@ -20,15 +20,15 @@ component "Trusted Record Service" as TRS #Gold
 
 component "Request Server 1" as RS1 #Lime
 component "Frontend Server 1" as FS1
-FS1 - - RS1
+FS1 .. RS1
 
 component "Request Server 2" as RS2 #Lime
 component "Frontend Server 2" as FS2
-FS2 - - RS2
+FS2 .. RS2
 
 component "Request Server 3" as RS3 #Lime
 component "Frontend Server 3" as FS3
-FS3 - - RS3
+FS3 .. RS3
 
 RS1 - - TRS
 RS2 - - TRS

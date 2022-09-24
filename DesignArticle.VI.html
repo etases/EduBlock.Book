@@ -136,8 +136,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#về-các-hệ-thống-hiện-tại" id="toc-về-các-hệ-thống-hiện-tại" class="nav-link" data-scroll-target="#về-các-hệ-thống-hiện-tại"><span class="toc-section-number">5.2</span>  Về các hệ thống hiện tại</a></li>
   <li><a href="#giải-pháp-thiết-kế" id="toc-giải-pháp-thiết-kế" class="nav-link" data-scroll-target="#giải-pháp-thiết-kế"><span class="toc-section-number">5.3</span>  Giải pháp &amp; Thiết kế</a>
   <ul class="collapse">
-  <li><a href="#hệ-thống-cơ" id="toc-hệ-thống-cơ" class="nav-link" data-scroll-target="#hệ-thống-cơ"><span class="toc-section-number">5.3.1</span>  Hệ thống cơ</a></li>
-  <li><a href="#hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán" id="toc-hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán" class="nav-link" data-scroll-target="#hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán"><span class="toc-section-number">5.3.2</span>  Hệ thống có áp dụng công nghệ dữ liệu phân tán</a></li>
+  <li><a href="#hệ-thống-cơ-bản" id="toc-hệ-thống-cơ-bản" class="nav-link" data-scroll-target="#hệ-thống-cơ-bản"><span class="toc-section-number">5.3.1</span>  Hệ thống cơ bản</a></li>
+  <li><a href="#áp-dụng-công-nghệ-dữ-liệu-phân-tán" id="toc-áp-dụng-công-nghệ-dữ-liệu-phân-tán" class="nav-link" data-scroll-target="#áp-dụng-công-nghệ-dữ-liệu-phân-tán"><span class="toc-section-number">5.3.2</span>  Áp dụng công nghệ dữ liệu phân tán</a></li>
+  <li><a href="#lên-quy-mô-liên-sở" id="toc-lên-quy-mô-liên-sở" class="nav-link" data-scroll-target="#lên-quy-mô-liên-sở"><span class="toc-section-number">5.3.3</span>  Lên quy mô liên sở</a></li>
   </ul></li>
   <li><a href="#kết-thúc" id="toc-kết-thúc" class="nav-link" data-scroll-target="#kết-thúc"><span class="toc-section-number">5.4</span>  Kết thúc</a></li>
   <li><a href="#nguồn-tham-khảo" id="toc-nguồn-tham-khảo" class="nav-link" data-scroll-target="#nguồn-tham-khảo"><span class="toc-section-number">5.5</span>  Nguồn tham khảo</a></li>
@@ -176,23 +177,78 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="giải-pháp-thiết-kế" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="giải-pháp-thiết-kế"><span class="header-section-number">5.3</span> Giải pháp &amp; Thiết kế</h2>
-<section id="hệ-thống-cơ" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="hệ-thống-cơ"><span class="header-section-number">5.3.1</span> Hệ thống cơ</h3>
-<div class="quarto-figure quarto-figure-left">
+<section id="hệ-thống-cơ-bản" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="hệ-thống-cơ-bản"><span class="header-section-number">5.3.1</span> Hệ thống cơ bản</h3>
+<div id="fig-overview" class="quarto-figure quarto-figure-left anchored">
 <figure class="figure">
-<p><img src="DesignArticle.VI_files/mediabag/d8f4c09018c3958c4b6432e12162b46d0861b1a1.svg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">System architecture without BlockChain</figcaption><p></p>
+<p><img src="DesignArticle.VI_files/mediabag/fb2ac66c258ea5865a49cb0c5144e8a8ed49ba37.svg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.1: Hệ thống cơ bản</figcaption><p></p>
 </figure>
 </div>
+<p><a href="#fig-overview">Figure&nbsp;<span>5.1</span></a> là sơ lược về hệ thống được đề xuất, bao gồm:</p>
+<ul>
+<li><p>Trusted Record Service (Trung tâm lưu trữ học bạ)</p>
+<p>Đây là trung tâm của hệ thống, nơi sẽ lưu trữ các học bạ đã được xác minh bởi các trường, và lịch sử chỉnh sửa của từng học bạ. Trung tâm này phải được sự tin tưởng của các thành viên tham gia hệ thống.</p>
+<p>Chỉ có các trường tham gia vào hệ thống mới có thể truy cập vào trung tâm để lấy học bạ, và chỉ có trường liên kết với học bạ đó mới được quyền lấy thông tin lí lịch và gửi yêu cầu cập nhật chỉnh sửa học bạ đó.</p></li>
+<li><p>Request Server (Máy chủ tiếp nhận yêu cầu)</p>
+<p>Mỗi trường trong hệ thống sẽ được phát một máy chủ để thao tác trên Trusted Record Service, trong đó có giấy phép của bên Trusted Record Service cho biết định danh của trường và các quyền trong Trusted Record Service.</p>
+<p>Đây cũng là nơi lưu các bản học bạ đang được chỉnh sửa và xử lí các yêu cầu chỉnh sửa từ người dùng (giáo viên, học sinh), bao gồm xác minh tính hợp lệ và tính chính xác của yêu cầu chỉnh sửa đó, tạo một bản học bạ hoàn chỉnh từ các yêu cầu hợp lệ để gửi lên Trusted Record Service kèm với giấy phép được nhận từ Trusted Record Service.</p>
+<p>Mỗi trường sẽ có cách xác minh yêu cầu chỉnh sửa học bạ riêng, tùy đặc thù mỗi trường mà Request Server của trường đó sẽ khác, tuy nhiên phần thao tác trên Trusted Record Service là giống nhau vì phải gửi học bạ đã xác minh kèm với giấy phép của trường đó.</p></li>
+<li><p>Frontend Server (Giao diện tương tác)</p>
+<p>Đây là phần phụ trợ cho Request Server để lấy, hiện các học bạ và gửi yêu cầu chỉnh sửa học bạ trên một giao diện dễ nhìn, dễ tương tác. Nó có thể là một phần trong trang quản lý của từng trường.</p>
+<p>Với việc Request Server của mỗi trường có thể khác nhau, giao diện của Frontend Server ở mỗi trường cũng sẽ khác nhau để thích ứng với đặc thù của từng trường.</p></li>
+</ul>
+<p>Quy trình tương tác với hệ thống được thể hiện trong <a href="#fig-rs-workflow">Figure&nbsp;<span>5.2</span></a></p>
+<div id="fig-rs-workflow" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 100.0%;justify-content: center;">
+<div id="fig-rs-workflow-requester" class="quarto-figure quarto-figure-left anchored">
+<figure class="figure">
+<p><img src="DesignArticle.VI_files/mediabag/a9953d79b7e06b45fb086ba6bd11fc4d4152119d.svg" class="img-fluid figure-img" data-ref-parent="fig-rs-workflow"></p>
+<p></p><figcaption class="figure-caption">(a) Người yêu cầu</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 100.0%;justify-content: center;">
+<div id="fig-rs-workflow-validator" class="quarto-figure quarto-figure-left anchored">
+<figure class="figure">
+<p><img src="DesignArticle.VI_files/mediabag/1c91d2e2960483c22ead2802fe863ff941a4635f.svg" class="img-fluid figure-img" data-ref-parent="fig-rs-workflow"></p>
+<p></p><figcaption class="figure-caption">(b) Người xác minh</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.2: Quy trình tương tác với hệ thống</figcaption><p></p>
+</figure>
+</div>
+<p>Trong đó “Người yêu cầu” là học sinh hoặc giáo viên, và “Người xác minh” là giáo viên chủ nhiệm đại diện chính cho học bạ được yêu cầu chỉnh sửa trong Request Server</p>
 </section>
-<section id="hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="hệ-thống-có-áp-dụng-công-nghệ-dữ-liệu-phân-tán"><span class="header-section-number">5.3.2</span> Hệ thống có áp dụng công nghệ dữ liệu phân tán</h3>
-<div class="quarto-figure quarto-figure-left">
+<section id="áp-dụng-công-nghệ-dữ-liệu-phân-tán" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="áp-dụng-công-nghệ-dữ-liệu-phân-tán"><span class="header-section-number">5.3.2</span> Áp dụng công nghệ dữ liệu phân tán</h3>
+<div id="fig-decentralized" class="quarto-figure quarto-figure-left anchored">
 <figure class="figure">
-<p><img src="DesignArticle.VI_files/mediabag/2f039218ebfec284141891729467201045c71640.svg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">System architecture with BlockChain</figcaption><p></p>
+<p><img src="DesignArticle.VI_files/mediabag/df646566dfdef02320a7a1d68205eb610ca7c667.svg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.3: Hệ thống có áp dụng công nghệ dữ liệu phân tán</figcaption><p></p>
 </figure>
 </div>
+<p>Ta có thể mở rộng hệ thống bằng cách áp dụng công nghệ dữ liệu phân tán. Cụ thể, ta có thể tách Trusted Record Service thành các Chain Node và để các Chain Node cho các trường (School) như <a href="#fig-decentralized">Figure&nbsp;<span>5.3</span></a>. Lúc này một Chain Node nhận yêu cầu chỉnh sửa học bạ từ Request Server sẽ không chỉ lưu trữ trên Chain Node đó mà còn sẽ gửi yêu cầu đó sang các Chain Node lân cận để cùng lưu trữ.</p>
+<p>Cấp độ này thường được sử dụng ở hệ thống các trường tư nhân mà không theo các quy trình của các trường chính quy theo Bộ Giáo Dục, nên quyền hạn của các trường là tương đương nhau.</p>
+<p>Hệ thống ở cấp độ này sẽ đảm bảo độ an toàn của dữ liệu học bạ trong trường hợp một Chain Node của một trường bị sập. Khi đó, ta có thể dùng giấy phép từ Request Server lên các Chain Node lân cận để lấy các dữ liệu khôi phục lại Chain Node đã sập. Tuy nhiên có bất lợi là mỗi Chain Node sẽ phải lưu một lượng lớn dữ liệu học bạ từ không chỉ chính trường giữ Chain Node đó mà còn các dữ liệu của các Chain Node lân cận.</p>
+</section>
+<section id="lên-quy-mô-liên-sở" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="lên-quy-mô-liên-sở"><span class="header-section-number">5.3.3</span> Lên quy mô liên sở</h3>
+<p>Ta có thể lên cấp độ của hệ thống lên quy mô liên sở, khi đó từng Chain Node sẽ do từng sở giáo dục duy trì như <a href="#fig-department">Figure&nbsp;<span>5.4</span></a>.</p>
+<div id="fig-department" class="quarto-figure quarto-figure-left anchored">
+<figure class="figure">
+<p><img src="DesignArticle.VI_files/mediabag/ab09a6f3b968b480652351e24f9739261f6cc19b.svg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.4: Hệ thống có áp dụng công nghệ dữ liệu phân tán</figcaption><p></p>
+</figure>
+</div>
+<p>Ở hệ thống này thì Chain Node sẽ do một bên được các sở tin tưởng (thường là Bộ Giáo Dục) để điều hành và thực hiện việc cài đặt Chain Node và chính các sở đó sẽ cấp giấy phép thao tác trên Chain Node cho các Request Server của các trường thuộc sở đó.</p>
+<p>Hệ thống ở cấp độ này có thể được áp dụng ở các trường chính quy, khi việc cập nhật học bạ theo một quy trình chặt chẽ từ các sở cho đến trường. Đây cũng là hệ thống được tin cậy nhất để có thể sử dụng cho việc xét tuyển lên các trường trên theo hình thức trực tuyến vì học bạ ở cấp độ này được cả trường và sở giáo dục liên quan đảm bảo.</p>
 </section>
 </section>
 <section id="kết-thúc" class="level2" data-number="5.4">

@@ -22,7 +22,8 @@ format:
   html:
     theme: cosmo
     fig-align: left
-    self-contained: true
+    embed-resources: true
+    standalone: true
   pdf:
     documentclass: book
     pdf-engine: tectonic

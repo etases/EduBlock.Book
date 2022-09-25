@@ -73,39 +73,39 @@ Quy trình tương tác với hệ thống được thể hiện trong @fig-rs-w
 
 ```{.plantuml caption="Người yêu cầu" id="fig-rs-workflow-requester"}
 @startuml
-actor "Người yêu cầu" as Requester
+actor "Requester" as Requester
 participant "Frontend Server" as Frontend
 participant "Request Server" as Backend
 participant "Trusted Record Service" as Record
 
-== Lấy thông tin học bạ ==
+== Get student record ==
 
-Requester -> Frontend: Yêu cầu lấy học bạ, kèm điều kiện
+Requester -> Frontend: Send request with conditions
 activate Frontend
-Frontend -> Backend: Yêu cầu lấy học bạ
+Frontend -> Backend: Send request with conditions
 activate Backend
-Backend -> Record: Yêu cầu lấy học bạ
+Backend -> Record: Send request
 activate Record
-Record --> Backend: Gửi học bạ tương ứng
+Record --> Backend: Response with relevant records
 deactivate Record
-Backend -> Backend: Lọc học bạ theo điều kiện
-Backend --> Frontend: Gửi học bạ tương ứng
+Backend -> Backend: Filter records by conditions
+Backend --> Frontend: Response with records
 deactivate Backend
-Frontend --> Requester: Thể hiện trên giao diện người dùng
+Frontend --> Requester: Display records on user interface
 deactivate Frontend
 
-== Yêu cầu chỉnh sửa học bạ ==
-Requester -> Frontend: Yêu cầu chỉnh sửa học bạ
+== Request to edit records ==
+Requester -> Frontend: Send request
 activate Frontend
-Frontend -> Backend: Yêu cầu chỉnh sửa học bạ
+Frontend -> Backend: Send request
 activate Backend
-alt Yêu cầu hợp lệ
-  Backend -> Backend: Lưu trữ như một yêu cầu cần xác minh
-  Backend --> Frontend: Thông báo thành công
-  Frontend --> Requester: Thông báo thành công
-else Yêu cầu không hợp lệ
-  Backend --> Frontend: Thông báo không hợp lệ
-  Frontend --> Requester: Thông báo không hợp lệ
+alt Valid request
+  Backend -> Backend: Save as pending request
+  Backend --> Frontend: Successful response
+  Frontend --> Requester: Successful response
+else Invalid request
+  Backend --> Frontend: Invalid response
+  Frontend --> Requester: Invalid response
 end
 deactivate Backend
 deactivate Frontend
@@ -114,40 +114,40 @@ deactivate Frontend
 
 ```{.plantuml caption="Người xác minh" id="fig-rs-workflow-validator"}
 @startuml
-actor "Người xác minh" as Validator
+actor "Validator" as Validator
 participant "Frontend Server" as Frontend
 participant "Request Server" as Backend
 participant "Trusted Record Service" as Record
 
-== Lấy yêu cầu chỉnh sửa học bạ ==
-Validator -> Frontend: Yêu cầu lấy các yêu cầu chỉnh sửa học bạ, kèm điều kiện
+== Get pending requests to edit records ==
+Validator -> Frontend: Send request with conditions
 activate Frontend
-Frontend -> Backend: Lấy các yêu cầu chỉnh sửa học bạ, kèm điều kiện
+Frontend -> Backend: Send request with conditions
 activate Backend
-Backend -> Backend: Lấy từ cơ sở dữ liệu cực bộ và lọc theo điều kiện
-Backend --> Frontend: Gửi các yêu cầu chỉnh sửa học bạ
+Backend -> Backend: Get from local database & Filter by conditions
+Backend --> Frontend: Response with edit requests
 deactivate Backend
-Frontend --> Validator: Thể hiện các yêu cầu trên giao diện người dùng
+Frontend --> Validator: Display edit requests in user interface
 deactivate Frontend
-== Xác nhận yêu cầu chỉnh sửa học bạ ==
-Validator -> Frontend: Gửi xác nhận yêu cầu chỉnh sửa học bạ
+== Validate requests to edit records ==
+Validator -> Frontend: Send validation for edit request
 activate Frontend
-Frontend -> Backend: Gửi xác nhận yêu cầu chỉnh sửa học bạ
+Frontend -> Backend: Send validation for edit request
 activate Backend
-Backend -> Backend: Xóa yêu cầu đang chờ từ cơ sở dữ liệu nội bộ
-alt Yêu cầu được chấp nhận
-  Backend -> Backend: Lưu yêu cầu được xác thực vào cơ sở dữ liệu nội bộ
+Backend -> Backend: Remove request from local database
+alt Accepted request
+  Backend -> Backend: Save as validated request
 end
-Backend --> Frontend: Gửi thông báo thành công
+Backend --> Frontend: Successful response 
 deactivate Backend
-Frontend --> Validator: Hiện thông báo thành công
+Frontend --> Validator: Successful response
 deactivate Frontend
 
-loop khi tới lúc cần gửi lên Record Service
+loop times to upload to Record Service
 activate Backend
-Backend -> Backend: Tạo học bạ từ các yêu cầu chỉnh sửa
-Backend -> Record: Gửi học bạ kèm giấy phép
-Record --> Backend: Thông báo thành công
+Backend -> Backend: Create records from validated edit requests
+Backend -> Record: Send records
+Record --> Backend: Successful response
 deactivate Backend
 end
 @enduml

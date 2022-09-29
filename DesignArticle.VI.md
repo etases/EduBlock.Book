@@ -3,7 +3,7 @@ title: "Design Article (VI)"
 subtitle: "Bước đầu thực hiện số hóa hoàn toàn học bạ ở Việt Nam"
 ---
 
-## Giới thiệu
+## Introduction
 
 Các tổ chức lớn hiện đang áp dụng các thành tựu hiện đại của duy trì hồ sơ điện tử, tuy vậy hầu hết các tổ chức học thuật chủ yếu là các tổ chức học thuật thuộc nhà nước vẫn còn dựa vào các quy trình thủ công để lưu trữ và chuyển giao hồ sơ như bảng điểm và chứng chỉ giữa các cơ sở và cho các nhà tuyển dụng tiềm năng. Ngay cả học sinh khi có nhu cầu được xem xét học bạ thì quy trình cũng đã có thể đến vài ngày, vậy nên việc chuyển trường điển hình của một học sinh thì sẽ mất khoảng tầm vài tuần cho đến tháng, nghiêm trọng hơn những sai sót có thể xảy ra và những yêu cầu phúc khảo có thể kéo dài vài tháng với thời gian xử lý và gửi bằng phương pháp giấy được áp dụng rộng rãi. Ngoài ý nghĩa thời gian chờ đợi và cơ hội cho thiệt hại vật chất hoặc mất mát hồ sơ trong quá trình lưu trữ trình, vận chuyển cũng có nguy cơ bị giả mạo thông tin xác thực bởi các bên lừa đảo. Việc lưu trữ và vận chuyển bằng hồ sơ vật lý cũng đi kèm với chi phí cao liên quan đến thời gian xử lý, nỗ lực làm việc thủ công, phí bưu điện và chuyển tuyến. 
 
@@ -320,7 +320,13 @@ FS33 .r. RS33
 
 Hệ thống ở cấp độ này có thể được áp dụng ở các trường chính quy, khi việc cập nhật học bạ theo một quy trình chặt chẽ từ các sở cho đến trường. Đây cũng là hệ thống được tin cậy nhất để có thể sử dụng cho việc xét tuyển lên các trường trên theo hình thức trực tuyến vì học bạ ở cấp độ này được cả trường và sở giáo dục liên quan đảm bảo.
 
-## Kết thúc
+## Conclusion 
+In this study, we presented a solution for managing and storing electronic academic records as a replacement for the traditional academic record based on distributed storage technology used by Blockchain, where the data is stored in a block and the blocks are connected on a chain by hashing.Our network enables us to manage data in the network using transactions via smart contracts. From there next, we show how to set up a multi-tier network and processes.  Our network enables us to decentralize organizations and system users through arranging chain nodes, verifying transactions with smart contracts, archiving modification history and restoring data of a node using data from other nodes.
+
+From this design, it can be concluded and proposed to organize a Permissioned Blockchain network with a multi-tier design. The main advantage of applying Permissioned Blockchain technology is its resistance to many threats and cyber attacks, rely on the hashing mechanism and the nodes on the Blockchain can prevent data breaches. And moreover, it offers a host of unique features such as improved reliability, better fault tolerance, faster and more efficient operation, and scalability.
+
+And thus, the management of documents for the field of education has the potential to be significantly impacted by the integration of blockchain, the hyperledger framework, and smart contract technologies across academic records.
+
 
 ## Nguồn tham khảo
 

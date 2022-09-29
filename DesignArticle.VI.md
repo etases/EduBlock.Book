@@ -15,6 +15,20 @@ Bài báo này được đăng lên để phân tích những bất cập trong 
 
 ## Về các hệ thống hiện tại
 
+Xét về các giải pháp số hóa học bạ, thì những năm gần đây đã có các giải pháp để quản lý và lưu trữ học bạ trực tuyến. Bất lợi lớn nhất của các giải pháp trên là sự tập trung của dữ liệu nên sẽ ảnh hưởng lớn nếu hệ thống bị sập dẫn đến mất dữ liệu, ngoài ra còn độ tin cậy của dữ liệu học bạ khi học bạ đó được một bên thứ ba lưu trữ.
+
+Một trong những thành tựu của ngành lưu trữ trực tuyến là việc phát minh ra BlockChain. Đây là một dạng cơ sở dữ liệu phân tán, trong đó dữ liệu được lưu trong một khối và kết nối các khối theo chuỗi bằng cơ chế hashing. Nếu xét riêng về giải pháp số hóa học bạ, BlockChain có những ưu điểm sau:
+
+- Sự phân tán: Dữ liệu được bảo toàn ở nhiều máy thành viên tham gia mạng lưới BlockChain. Khi bị mất dữ liệu thì có thể khôi phục từ các máy thành viên.
+
+- Sự minh bạch: Cơ chế hashing giúp dữ liệu trong một khối sẽ được xác minh bởi các khối khác, tạo nên sự không thể bị thay đổi của dữ liệu. Cho nên, dữ liệu trên mạng lưới BlockChain là dữ liệu đã được xác minh, không thể bị phá hủy, không thể bị làm giả, nên có sự rõ ràng minh bạch và có thể tin tưởng.
+
+- Không can thiệp của bên thứ ba: Dữ liệu được xác minh và lưu trữ bởi các thành viên tham gia mạng lưới, khác với các giải pháp truyền thông khi phải phụ thuộc vào một bên thứ ba để tin tưởng làm nơi lưu trữ.
+
+Để các giao dịch diễn ra trên mạng BlockChain, ta có cơ chế Smart Contract. Đây là một bộ quy tắc được lập trình sẵn để quy định các điều kiện và trình tự thực thi một giao dịch trên mạng BlockChain, được kí bởi các bên liên quan, xác minh bởi các thành viên trong mạng lưới và không có sự can thiệp của bên thứ ba. Nó được dùng để xử lí dữ liệu trên mạng lưới, đồng thời cũng đặt điều kiện giới hạn việc thực thi thao tác trên dữ liệu trên mạng lưới. Nó là một chương trình tự chạy trên mạng BlockChain nên nó có tính minh bạch.
+
+Một đặc điểm quan trọng khác của một hệ thống quản lí học bạ là sự riêng tư của lý lịch học sinh trên học bạ, điều này buộc các hệ thống phải có tính năng phân quyền để chỉ những người được cấp quyền mới được xem thông tin học sinh trên học bạ. Với BlockChain, có một số dự án mã nguồn mở để thực hiện xây dựng các tính chất trên. Một trong số đó là Hyperledger Fabric. Đây là một dự án mã nguồn mở (từ chuỗi dự án Hyperledger) về BlockChain riêng tư (Private) và có phân quyền (Permissioned). Khác với các BlockChain mở như BitCoin hay Etherium, khi mà ai cũng có thể tham gia và thực hiện giao dịch, các thành viên trong mạng lưới Fabric được đăng kí xác nhận từ Nhà cung cấp dịch vụ thành viên (Membership Service Provider) và cơ chế Smart Contract của Fabric có thể mở rộng để giới hạn quyền truy cập và xử lí dữ liệu của các thành viên được đăng kí trong mạng lưới. Một ví dụ về việc áp dụng Hyperledger Fabric trong lưu trữ có thể nói là [Sony Global Education](https://www.hyperledger.org/wp-content/uploads/2017/12/Hyperledger_CaseStudy_Sony.pdf) khi họ chọn để thực hiện hệ thống lưu trữ bằng cấp, mà có thể giới hạn quyền truy cập dữ liệu cho các bên liên quan. Với giải pháp số hóa học bạ, ta có thể gửi thông tin cá nhân và học bạ của học sinh lên mạng lưới và giới hạn quyền truy cập và sửa chữa học bạ cho chỉ trường chứa học sinh đó. Ta cũng có thể tạo một tính năng chỉ xuất điểm từ các học bạ được lưu trên mạng lưới để thực hiện việc thống kê và phân tích.
+
 ## Giải pháp & Thiết kế
 
 ### Hệ thống cơ bản 
@@ -314,3 +328,7 @@ Hệ thống ở cấp độ này có thể được áp dụng ở các trườ
 - [Giáo viên khốn khổ vì học bạ giấy](https://vnexpress.net/giao-vien-khon-kho-vi-hoc-ba-giay-4442649.html)
 - [Học bạ giấy thời 4.0](https://vnexpress.net/hoc-ba-giay-thoi-4-0-4444060.html)
 - [Có học bạ điện tử sao còn làm khó GV khi yêu cầu "bản sao học bạ công chứng"](https://giaoduc.net.vn/co-hoc-ba-dien-tu-sao-con-lam-kho-gv-khi-yeu-cau-ban-sao-hoc-ba-cong-chung-post226595.gd)
+- [Sony Global Education](https://www.hyperledger.org/wp-content/uploads/2017/12/Hyperledger_CaseStudy_Sony.pdf)
+- [BlockChain là gì?](https://topdev.vn/blog/blockchain-la-gi/)
+- [The blockchain: State-of-the-art and research challenges](https://sci-hub.ru/https://www.sciencedirect.com/science/article/pii/S2452414X19300019)
+- [What is Hyperledger Fabric](https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html#what-is-hyperledger-fabric)

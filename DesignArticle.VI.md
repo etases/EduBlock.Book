@@ -13,7 +13,7 @@ Hiện nay đã có một số địa phương đang số hóa học bạ, hay c
 
 Bài báo này được đăng lên để phân tích những bất cập trong các hệ thống học bạ điện tử hiện nay, đồng thời đề xuất giải pháp để bước đầu thực hiện số hóa hoàn toàn học bạ ở Việt Nam.
 
-## Về các hệ thống hiện tại
+## Công nghệ
 
 Xét về các giải pháp số hóa học bạ, thì những năm gần đây đã có các giải pháp để quản lý và lưu trữ học bạ trực tuyến. Bất lợi lớn nhất của các giải pháp trên là sự tập trung của dữ liệu nên sẽ ảnh hưởng lớn nếu hệ thống bị sập dẫn đến mất dữ liệu, ngoài ra còn độ tin cậy của dữ liệu học bạ khi học bạ đó được một bên thứ ba lưu trữ.
 

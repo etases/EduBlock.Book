@@ -33,7 +33,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_book
 
-      - uses: actions/upload-artifact@v3
+      - name: Upload PDF
+        uses: actions/upload-artifact@v3
         with:
           name: Book
           path: _book/*.pdf
+
+      - name: Upload DOCX
+        uses: actions/upload-artifact@v3
+        with:
+          name: Book
+          path: _book/*.docx

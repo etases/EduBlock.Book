@@ -28,6 +28,10 @@ format:
     documentclass: book
     pdf-engine: tectonic
     papersize: a4
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
 
 filters:
   - filters/diagram-generator.lua

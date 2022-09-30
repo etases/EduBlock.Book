@@ -9,32 +9,32 @@ keywords: ["Academic record", "Blockchain", "Hyperledger Fabric"]
 
 Các tổ chức lớn hiện đang áp dụng các thành tựu hiện đại của duy trì hồ sơ điện tử, tuy vậy hầu hết các tổ chức học thuật chủ yếu là các tổ chức học thuật thuộc nhà nước vẫn còn dựa vào các quy trình thủ công để lưu trữ và chuyển giao hồ sơ như bảng điểm và chứng chỉ giữa các cơ sở và cho các nhà tuyển dụng tiềm năng. Ngay cả học sinh khi có nhu cầu được xem xét học bạ thì quy trình cũng đã có thể đến vài ngày, vậy nên việc chuyển trường điển hình của một học sinh thì sẽ mất khoảng tầm vài tuần cho đến tháng, nghiêm trọng hơn những sai sót có thể xảy ra và những yêu cầu phúc khảo có thể kéo dài vài tháng với thời gian xử lý và gửi bằng phương pháp giấy được áp dụng rộng rãi. Ngoài ý nghĩa thời gian chờ đợi và cơ hội cho thiệt hại vật chất hoặc mất mát hồ sơ trong quá trình lưu trữ trình, vận chuyển cũng có nguy cơ bị giả mạo thông tin xác thực bởi các bên lừa đảo. Việc lưu trữ và vận chuyển bằng hồ sơ vật lý cũng đi kèm với chi phí cao liên quan đến thời gian xử lý, nỗ lực làm việc thủ công, phí bưu điện và chuyển tuyến. 
 
-Các giải pháp mới ra đời chủ yếu dựa vào Email based solutions, PDF record transfers trong khi vẫn tồn tại các giới hạn nationality barriers, riêng tư và bảo mật. Mặc dù Blockchain nổi lên như một trào lưu về các ứng dụng trong lĩnh vực tài chính qua sự phổ biến của đồng BitCoin và các tiền điện tử, NFT, lĩnh vực này đa dạng hơn nhiều cả về kỹ thuật và về các lĩnh vực ứng dụng được giải quyết [1]. Tuy , các ứng dụng phân tán ngày càng được áp dụng vào nhiều lĩnh vực khác nhau như lưu trữ dữ liệu including handling medical records and healthcare [2,5]), Cloud and Grid Computing [3], e-vote [4], Service for IoT[6], Banking system[7] and foremost is the field of Education. Các mô hinh giải pháp lưu trữ và chống gian lận bằng cấp online cũng đã được lên ý tưởng mang lại những lợi ích ban đầu của việc áp dụng công nghệ Blockchain [8][9]. While these solutions provide a more modern approach to the storage and the transfer of academic records, there are still limitations in terms of widespread adoption, auditability, and scalability. Các tổ chức học thuật có thể được hưởng lợi từ blockchain công nghệ để cung cấp một sổ cái phi tập trung và bất biến để xác nhận tính toàn vẹn của hồ sơ học tập [10]. Một giải pháp lưu trữ và trao đổi học bạ điện tử thành công sẽ bao gồm tính Security and Privacy, Scalability và đồng thời hưởng lợi từ các ưu điểm của công nghệ blockchain Sự phân tán, Sự minh bạch, further described in Section II.
+Các giải pháp mới ra đời chủ yếu dựa vào Email based solutions, PDF record transfers trong khi vẫn tồn tại các giới hạn nationality barriers, riêng tư và bảo mật. Mặc dù Blockchain nổi lên như một trào lưu về các ứng dụng trong lĩnh vực tài chính qua sự phổ biến của đồng BitCoin và các tiền điện tử, NFT, lĩnh vực này đa dạng hơn nhiều cả về kỹ thuật và về các lĩnh vực ứng dụng được giải quyết [1]. Tuy , các ứng dụng phân tán ngày càng được áp dụng vào nhiều lĩnh vực khác nhau như lưu trữ dữ liệu including handling medical records and healthcare [2,5]), Cloud and Grid Computing [3], e-vote [4], Service for IoT[6], Banking system[7] and foremost is the field of Education. Các mô hinh giải pháp lưu trữ và chống gian lận bằng cấp online cũng đã được lên ý tưởng mang lại những lợi ích ban đầu của việc áp dụng công nghệ Blockchain [8][9]. While these solutions provide a more modern approach to the storage and the transfer of academic records, there are still limitations in terms of widespread adoption, auditability, and scalability. Các tổ chức học thuật có thể được hưởng lợi từ Blockchain công nghệ để cung cấp một sổ cái phi tập trung và bất biến để xác nhận tính toàn vẹn của hồ sơ học tập [10]. Một giải pháp lưu trữ và trao đổi học bạ điện tử thành công sẽ bao gồm tính Security and Privacy, Scalability và đồng thời hưởng lợi từ các ưu điểm của công nghệ Blockchain Sự phân tán, Sự minh bạch, further described in Section II.
 
-Mục tiêu của hệ thống được đề xuất của chúng tôi là giải quyết những hạn chế của các giải pháp hiện có bằng cách cung cấp một phương pháp bảo mật, có thể xác minh và truy vết nhằm chống giả mạo để lưu trữ,truy cập, quản lý và trao đổi học bạ điện tử giữa các tổ chức sử dụng công nghệ blockchain. Phần II thảo luận về các công nghệ liên quan. Giải pháp và thiết kế  đề xuất của chúng tôi được trình bày trong Phần III. Cuối cùng, Phần IV đưa ra những nhận xét kết luận.
+Mục tiêu của hệ thống được đề xuất của chúng tôi là giải quyết những hạn chế của các giải pháp hiện có bằng cách cung cấp một phương pháp bảo mật, có thể xác minh và truy vết nhằm chống giả mạo để lưu trữ,truy cập, quản lý và trao đổi học bạ điện tử giữa các tổ chức sử dụng công nghệ Blockchain. Phần II thảo luận về các công nghệ liên quan. Giải pháp và thiết kế  đề xuất của chúng tôi được trình bày trong Phần III. Cuối cùng, Phần IV đưa ra những nhận xét kết luận.
 
 
-## Công nghệ
+## State of the art
 
-Xét về các giải pháp số hóa học bạ, thì những năm gần đây đã có các giải pháp để quản lý và lưu trữ học bạ trực tuyến. Bất lợi lớn nhất của các giải pháp trên là sự tập trung của dữ liệu nên sẽ ảnh hưởng lớn nếu hệ thống bị sập dẫn đến mất dữ liệu, ngoài ra còn độ tin cậy của dữ liệu học bạ khi học bạ đó được một bên thứ ba lưu trữ.
+In terms of digital solutions, in recent years, there have been technologies to manage and store academic records digitally. The biggest disadvantage of the above solutions is the centralization of data, so it will have a big impact if the system crashes, leading to data loss, in addition to the reliability of the data when it is stored by a third party.
 
-Một trong những thành tựu của ngành lưu trữ trực tuyến là việc phát minh ra BlockChain. Đây là một dạng cơ sở dữ liệu phân tán, trong đó dữ liệu được lưu trong một khối và kết nối các khối theo chuỗi bằng cơ chế hashing [11]. Nếu xét riêng về giải pháp số hóa học bạ, BlockChain có những ưu điểm sau [12]:
+One of the achievements of the online storage industry is the invention of Blockchain. This is a form of distributed database in which data is stored in a block and connects the blocks in a chain by hashing mechanism [11]. If we consider the solution of digitizing academic records alone, Blockchain has the following advantages [12]:
 
-- Sự phân tán: Dữ liệu được bảo toàn ở nhiều máy thành viên tham gia mạng lưới BlockChain. Khi bị mất dữ liệu thì có thể khôi phục từ các máy thành viên.
+- Decentralized: Data is preserved in many member machines participating in the network. When data is lost, it can be restored from member computers.
 
-- Sự minh bạch: Cơ chế hashing giúp dữ liệu trong một khối sẽ được xác minh bởi các khối khác, tạo nên sự không thể bị thay đổi của dữ liệu. Cho nên, dữ liệu trên mạng lưới BlockChain là dữ liệu đã được xác minh, không thể bị phá hủy, không thể bị làm giả, nên có sự rõ ràng minh bạch và có thể tin tưởng.
+- Transparency: The hashing mechanism makes the data in one block verified by other blocks, making the data immutable. Therefore, the data on the Blockchain network is verified, indestructible, and cannot be faked, so it has clarity, transparency, and can be trusted.
 
-- Không can thiệp của bên thứ ba: Dữ liệu được xác minh và lưu trữ bởi các thành viên tham gia mạng lưới, khác với các giải pháp truyền thông khi phải phụ thuộc vào một bên thứ ba để tin tưởng làm nơi lưu trữ.
+- No third party interference: Data is verified and stored by network members, different from traditional solutions when having to depend on a trusted third party as a storage place.
 
-Để các giao dịch diễn ra trên mạng BlockChain, ta có cơ chế Smart Contract. Đây là một bộ quy tắc được lập trình sẵn để quy định các điều kiện và trình tự thực thi một giao dịch trên mạng BlockChain, được kí bởi các bên liên quan, xác minh bởi các thành viên trong mạng lưới và không có sự can thiệp của bên thứ ba. Nó được dùng để xử lí dữ liệu trên mạng lưới, đồng thời cũng đặt điều kiện giới hạn việc thực thi thao tác trên dữ liệu trên mạng lưới. Nó là một chương trình tự chạy trên mạng BlockChain nên nó có tính minh bạch [13]. 
+For transactions to take place on the Blockchain network, we have a Smart Contract mechanism. This is a pre-programmed set of rules to regulate the conditions and order of execution of a transaction on the Blockchain network, signed by the parties involved, verified by the members of the network, and without interference of third parties. It is used to process data on the network, and also set conditions that limit the execution of operations on data on the network. It is a self-run program on the Blockchain network so it is transparent [13]. 
 
-Một đặc điểm quan trọng khác của một hệ thống quản lí học bạ là sự riêng tư của lý lịch học sinh trên học bạ, điều này buộc các hệ thống phải có tính năng phân quyền để chỉ những người được cấp quyền mới được xem thông tin học sinh trên học bạ. Với BlockChain, có một số dự án mã nguồn mở để thực hiện xây dựng các tính chất trên. Một trong số đó là Hyperledger Fabric. Đây là một dự án mã nguồn mở (từ chuỗi dự án Hyperledger) về BlockChain riêng tư (Private) và có phân quyền (Permissioned) [14]. Khác với các BlockChain mở như BitCoin hay Etherium, khi mà ai cũng có thể tham gia và thực hiện giao dịch, các thành viên trong mạng lưới Fabric được đăng kí xác nhận từ Nhà cung cấp dịch vụ thành viên (Membership Service Provider) và cơ chế Smart Contract của Fabric có thể mở rộng để giới hạn quyền truy cập và xử lí dữ liệu của các thành viên được đăng kí trong mạng lưới. Một ví dụ về việc áp dụng Hyperledger Fabric trong lưu trữ có thể nói là Sony Global Education khi họ chọn để thực hiện hệ thống lưu trữ bằng cấp, mà có thể giới hạn quyền truy cập dữ liệu cho các bên liên quan [15]. Với giải pháp số hóa học bạ, ta có thể gửi thông tin cá nhân và học bạ của học sinh lên mạng lưới và giới hạn quyền truy cập và sửa chữa học bạ cho chỉ trường chứa học sinh đó. Ta cũng có thể tạo một tính năng chỉ xuất điểm từ các học bạ được lưu trên mạng lưới để thực hiện việc thống kê và phân tích.
+Another important feature of a record management system is the privacy of students' personal information, which forces systems to have an authorization feature so that only authorized persons can view student information on transcripts. With Blockchain, there are a number of open source projects to implement the above properties. One of them is Hyperledger Fabric. This is an open-source project from the Hyperledger series about private and permissioned Blockchain. [14]. Unlike public Blockchains like Bitcoin or Etherium, where anyone can participate and make transactions, Fabric network members are registered for attention from a Member Service Provider. The Smart Contract mechanism is extensible to limit the access and data processing rights of members registered in the network. An example of applying Hyperledger Fabric in education storage can be said to be Sony Global Education when they choose to implement a cetification archiving system, which can limit data access for stakeholders [15]. For a solution to digitalize records, we can post a student's personal information and transcripts online and limit access to and edit records to only the school where the student resides. We can also create a feature that only exports grades from records stored on the network for statistics and analysis.
 
-## Giải pháp & Thiết kế
+## Approach & Concept
 
-### Hệ thống cơ bản 
+### Centralized
 
-```{.plantuml caption="Hệ thống cơ bản" id="fig-overview"}
+```{.plantuml caption="A centralized system" id="fig-overview"}
 @startuml
 
 left to right direction
@@ -60,33 +60,33 @@ RS3 -- TRS
 @enduml
 ```
 
-@fig-overview là sơ lược về hệ thống được đề xuất, bao gồm:
+@fig-overview is an overview of our solution, represented as a centralized system, including:
 
-*   Trusted Record Service (Trung tâm lưu trữ học bạ)
+*   Trusted Record Service (TRS)
     
-    Đây là trung tâm của hệ thống, nơi sẽ lưu trữ các học bạ đã được xác minh bởi các trường, và lịch sử chỉnh sửa của từng học bạ. Trung tâm này phải được sự tin tưởng của các thành viên tham gia hệ thống.
+    This is the center of the system, which will store the records that have been verified by the schools, and the revision history of each record. This center must be trusted by members of the system.
     
-    Chỉ có các trường tham gia vào hệ thống mới có thể truy cập vào trung tâm để lấy học bạ, và chỉ có trường liên kết với học bạ đó mới được quyền lấy thông tin lí lịch và gửi yêu cầu cập nhật chỉnh sửa học bạ đó.
+    Only schools participating in the system can access the center to get records, and only schools associated with the record are authorized to get background information and submit a request to update and correct them.
 
-*   Request Server (Máy chủ tiếp nhận yêu cầu)
+*   Request Server (RS)
     
-    Mỗi trường trong hệ thống sẽ được phát một máy chủ để thao tác trên Trusted Record Service, trong đó có giấy phép của bên Trusted Record Service cho biết định danh của trường và các quyền trong Trusted Record Service.
+    Each school in the system will be assigned a server to operate on the TRS, which contains a license indicating the school's identity and the permissions in the TRS.
 
-    Đây cũng là nơi lưu các bản học bạ đang được chỉnh sửa và xử lí các yêu cầu chỉnh sửa từ người dùng (giáo viên, học sinh), bao gồm xác minh tính hợp lệ và tính chính xác của yêu cầu chỉnh sửa đó, tạo một bản học bạ hoàn chỉnh từ các yêu cầu hợp lệ để gửi lên Trusted Record Service kèm với giấy phép được nhận từ Trusted Record Service.
+    This is also the place to save the transcripts being edited and handle correction requests from users (teachers, students, etc.), including verifying the validity and accuracy of such correction requests, generating a complete transcript from valid requests to submit to the TRS with the license.
 
-    Mỗi trường sẽ có cách xác minh yêu cầu chỉnh sửa học bạ riêng, tùy đặc thù mỗi trường mà Request Server của trường đó sẽ khác, tuy nhiên phần thao tác trên Trusted Record Service là giống nhau vì phải gửi học bạ đã xác minh kèm với giấy phép của trường đó.
+    Schools may have different ways of verifying the request for editing records, depending on the specificity of each one. Therefore, the Request Server of a school may be different, but the operation on TRS is the same because the verified transcript must be sent with a license from that school.
 
-*   Frontend Server (Giao diện tương tác)
+*   Frontend Server (FS)
 
-	Đây là phần phụ trợ cho Request Server để lấy, hiện các học bạ và gửi yêu cầu chỉnh sửa học bạ trên một giao diện dễ nhìn, dễ tương tác. Nó có thể là một phần trong trang quản lý của từng trường.
+  	This is the interactive server for the RS to retrieve, display the school records and send a request to edit the records on an easy-to-see, easy-to-interact interface. It can be part of the management page of the school.
 
-	Với việc Request Server của mỗi trường có thể khác nhau, giao diện của Frontend Server ở mỗi trường cũng sẽ khác nhau để thích ứng với đặc thù của từng trường.
+  	Since the RS of each school may be different, the interface of the FS may also be different to adapt to the specifics of that school.
 
-Quy trình tương tác với hệ thống được thể hiện trong @fig-rs-workflow
+The workflow of the system is shown in @fig-rs-workflow
 
 ::: {#fig-rs-workflow layout-ncol=1}
 
-```{.plantuml caption="Người yêu cầu" id="fig-rs-workflow-requester"}
+```{.plantuml caption="From requester-view" id="fig-rs-workflow-requester"}
 @startuml
 actor "Requester" as Requester
 participant "Frontend Server" as Frontend
@@ -127,7 +127,7 @@ deactivate Frontend
 @enduml
 ```
 
-```{.plantuml caption="Người xác minh" id="fig-rs-workflow-validator"}
+```{.plantuml caption="From validator-view" id="fig-rs-workflow-validator"}
 @startuml
 actor "Validator" as Validator
 participant "Frontend Server" as Frontend
@@ -168,13 +168,13 @@ end
 @enduml
 ```
 
-Quy trình tương tác với hệ thống
+The sequence diagram of the system
 :::
-Trong đó "Người yêu cầu" là học sinh hoặc giáo viên, và "Người xác minh" là giáo viên chủ nhiệm đại diện chính cho học bạ được yêu cầu chỉnh sửa trong Request Server
+"Requester" is the student or teacher, and "Validator" is the homeroom teacher representing the school associated with the record requested to be edited in the Request Server.
 
-### Áp dụng công nghệ dữ liệu phân tán
+### Decentralized & Multiple schools
 
-```{.plantuml caption="Hệ thống có áp dụng công nghệ dữ liệu phân tán" id="fig-decentralized"}
+```{.plantuml caption="A decentralized system with multiple schools" id="fig-decentralized"}
 @startuml
 
 left to right direction
@@ -215,17 +215,17 @@ CN3 -- E2
 @enduml
 ```
 
-Ta có thể mở rộng hệ thống bằng cách áp dụng công nghệ dữ liệu phân tán. Cụ thể, ta có thể tách Trusted Record Service thành các Chain Node và để các Chain Node cho các trường (School) như @fig-decentralized. Lúc này một Chain Node nhận yêu cầu chỉnh sửa học bạ từ Request Server sẽ không chỉ lưu trữ trên Chain Node đó mà còn sẽ gửi yêu cầu đó sang các Chain Node lân cận để cùng lưu trữ.
+We can extend the system by applying decentralized data technology. Specifically, we can split Trusted Record Service into Chain Nodes and leave Chain Nodes for Schools like @fig-decentralized. Now a Chain Node that receives a request to edit records from the Request Server will not only store it on that Chain Node, but will also send that request to neighboring Chain Nodes for storage.
 
-Cấp độ này thường được sử dụng ở hệ thống các trường tư nhân mà không theo các quy trình của các trường chính quy theo Bộ Giáo Dục, nên quyền hạn của các trường là tương đương nhau.
+This level is often used in private school systems that do not follow the formal school procedures according to the Department of Education, so the authority of the schools is equivalent.
 
-Hệ thống ở cấp độ này sẽ đảm bảo độ an toàn của dữ liệu học bạ trong trường hợp một Chain Node của một trường bị sập. Khi đó, ta có thể dùng giấy phép từ Request Server lên các Chain Node lân cận để lấy các dữ liệu khôi phục lại Chain Node đã sập. Tuy nhiên có bất lợi là mỗi Chain Node sẽ phải lưu một lượng lớn dữ liệu học bạ từ không chỉ chính trường giữ Chain Node đó mà còn các dữ liệu của các Chain Node lân cận.
+A system at this level will ensure the security & persistency of academic record data in case a school's Chain Node goes down. If then, we can use the license from the Request Server to the neighboring Chain Nodes to retrieve the data to restore the collapsed Chain Node. However, the disadvantage is that each Chain Node will have to store a large amount of data from not only the school holding that Chain Node but also the data of neighboring Chain Nodes.
 
-### Lên quy mô liên sở
+### Mutiple departments
 
-Ta có thể lên cấp độ của hệ thống lên quy mô liên sở, khi đó từng Chain Node sẽ do từng sở giáo dục duy trì như @fig-department.
+We can level up the system to an inter-departmental scale so that each Chain Node will be maintained by each educational department like @fig-department.
 
-```{.plantuml caption="Hệ thống có áp dụng công nghệ dữ liệu phân tán" id="fig-department"}
+```{.plantuml caption="A inter-departmental decentralized system" id="fig-department"}
 @startuml
 
 skinparam linetype polyline
@@ -318,21 +318,21 @@ FS33 .r. RS33
 @enduml
 ```
 
-Ở hệ thống này thì Chain Node sẽ do một bên được các sở tin tưởng (thường là Bộ Giáo Dục) để điều hành và thực hiện việc cài đặt Chain Node và chính các sở đó sẽ cấp giấy phép thao tác trên Chain Node cho các Request Server của các trường thuộc sở đó.
+In this system, the Chain Node will be initilized by a party trusted by the departments (usually the Ministry of Education), and those departments will issue licenses to operate on the Chain Node to the Request Server of schools belonging to that department.
 
-Hệ thống ở cấp độ này có thể được áp dụng ở các trường chính quy, khi việc cập nhật học bạ theo một quy trình chặt chẽ từ các sở cho đến trường. Đây cũng là hệ thống được tin cậy nhất để có thể sử dụng cho việc xét tuyển lên các trường trên theo hình thức trực tuyến vì học bạ ở cấp độ này được cả trường và sở giáo dục liên quan đảm bảo.
+The system at this level can be applied in regular schools, where the update of records follows a strict process from departments to schools. This is also the most trusted system that can be used for online admission to the above schools because records at this level are guaranteed by both the school and the relevant educational department.
 
 ## Conclusion 
 In this study, we presented a solution for managing and storing electronic academic records as a replacement for the traditional academic record based on distributed storage technology used by Blockchain, where the data is stored in a block and the blocks are connected on a chain by hashing.Our network enables us to manage data in the network using transactions via smart contracts. From there next, we show how to set up a multi-tier network and processes.  Our network enables us to decentralize organizations and system users through arranging chain nodes, verifying transactions with smart contracts, archiving modification history and restoring data of a node using data from other nodes.
 
 From this design, it can be concluded and proposed to organize a Permissioned Blockchain network with a multi-tier design. The main advantage of applying Permissioned Blockchain technology is its resistance to many threats and cyber attacks, rely on the hashing mechanism and the nodes on the Blockchain can prevent data breaches. And moreover, it offers a host of unique features such as improved reliability, better fault tolerance, faster and more efficient operation, and scalability.
 
-And thus, the management of documents for the field of education has the potential to be significantly impacted by the integration of blockchain, the hyperledger framework, and smart contract technologies across academic records.
+And thus, the management of documents for the field of education has the potential to be significantly impacted by the integration of Blockchain, the hyperledger framework, and smart contract technologies across academic records.
 
 
 ## Nguồn tham khảo
 
-[1] M. Walport, Distributed ledger technology: Beyond blockchain, UK Government Office for Science (2016).
+[1] M. Walport, Distributed ledger technology: Beyond Blockchain, UK Government Office for Science (2016).
 
 [2] Duong-Trung, N., Son, H. X., Le, H. T., & Phan, T. T. (2020). Smart Care. Proceedings of the 2020 4th International Conference on Cryptography, Security and Privacy. https://doi.org/10.1145/3377644.3377667 
 

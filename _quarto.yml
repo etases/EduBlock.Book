@@ -14,6 +14,7 @@ book:
     - Requirement.md
     - Requirement.new.md
     - DesignArticle.VI.md
+    - Fabric.RoadMap.md
     - references.qmd
 
 bibliography: references.bib

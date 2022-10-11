@@ -5,6 +5,10 @@
 - [Wiki](https://hyperledger-fabric.readthedocs.io/en/latest/key_concepts.html)
 - [Short Version](https://lilly021.com/hyperledger-fabric-key-concepts/)
 - [Simplilearn](https://www.youtube.com/watch?v=vs8q1-xvoBE)
+- Demystifying Hyperledger Fabric
+  - [Part 1](https://www.serial-coder.com/post/demystifying-hyperledger-fabric-fabric-architecture/)
+  - [Part 2](https://www.serial-coder.com/post/demystifying-hyperledger-fabric-private-data-collection/)
+  - [Part 3](https://www.serial-coder.com/post/demystifying-hyperledger-fabric-network-traffic-handling-service-discovery-and-operations-service/)
 
 ## Develop Chaincode (Smart Contract) /w Java
 

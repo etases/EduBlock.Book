@@ -1,8 +1,10 @@
 ---
 title: "Design Article (VI)"
-subtitle: "Bước đầu thực hiện số hóa hoàn toàn học bạ ở Việt Nam"
+subtitle: "First approach to Digitalize Academic Records in Viet Nam using Blockchain Technology"
 abstract: "Schools and departments are using modern technologies for storing and managing academic records digitally. However, the implementation is not consistent as many places still rely on traditional ways to proceed transcripts, and it has major problems like being centralized, third-party required, untraceable, untrustworthy, etc. This paper attempts to present an approach to the problem by listing the major characteristics of a reliable system; explain how and which Blockchain technologies, especially Hyperledger Fabric, can be applied to the situation; and provide three concepts: a centralized system, a multi-school network using Blockchain, and a multiple school-department one that expands the multi-school one and gives the storage and management to departments of education. This paper will be used as a foundation for similar topics and products to implement the concepts."
 keywords: ["Academic record", "Blockchain", "Hyperledger Fabric"]
+citation:
+  doi: 10.1145/3591569.3591583
 ---
 
 ## Introduction
@@ -330,7 +332,7 @@ From this design, it can be concluded and proposed to organize a Permissioned Bl
 And thus, the management of documents for the field of education has the potential to be significantly impacted by the integration of Blockchain, the hyperledger framework, and smart contract technologies across academic records.
 
 
-## Nguồn tham khảo
+## References
 
 [1] M. Walport, Distributed ledger technology: Beyond Blockchain, UK Government Office for Science (2016).
 
